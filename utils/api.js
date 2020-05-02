@@ -4,8 +4,8 @@ const api = {
   getUser(username) {
     axios.get(
       `https://api.github.com/users/${username}`
-    ).then (function(response){
-      console.log(response)
+    ).then(function (response) {
+      return response;
     });
   }
 };
