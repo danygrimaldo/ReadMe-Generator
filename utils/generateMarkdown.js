@@ -1,12 +1,18 @@
 function generateMarkdown(data) {
   return `
 # ${data.title}
-# GitHub ID: ${data.username}
+### GitHub ID: ${data.username}
 
 ## Description: 
 ${data.description}
 
 ## Table of Contents:
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
 * ${data.tableOfCont}
 
 ## Installation:
@@ -27,7 +33,9 @@ ${data.license}
 ## Questions:
 * ${data.questions}
 
+
 [![GitHub Release](https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat)]()
+
 
 ![GitHub Avatar Image](https://avatars.githubusercontent.com/${data.username})
 `;
